@@ -1,0 +1,6 @@
+discord
+requests
+json
+asyncio
+flask
+aiogram==2.23.1
