@@ -3,6 +3,7 @@ from discord.ext import commands, tasks
 import requests
 import json
 import asyncio
+from keep_alive import keep_alive
 
 bot_token = "MTI3MzAyODQ2OTc4OTI5NDcwMw.GgyeIw.3ELSs4z3hxoHrgPkkNHV6RN24UM_lvI4Z1m6Is"
 
