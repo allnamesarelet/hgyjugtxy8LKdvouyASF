@@ -3,9 +3,9 @@ from discord.ext import commands, tasks
 import requests
 import json
 import asyncio
+import os
 from keep_alive import keep_alive
-
-bot_token = "MTI3MzAyODQ2OTc4OTI5NDcwMw.GgyeIw.3ELSs4z3hxoHrgPkkNHV6RN24UM_lvI4Z1m6Is"
+keep_alive()
 
 client_id = "b8jk0k9u00u5fegxq58sv4ul9r3lz3"
 client_secret = "7g9bd9yyr5l5hxpi5kt6ibky9y1l9o"
@@ -74,4 +74,4 @@ async def on_ready():
     print("Bot guilds:", bot.guilds)
     asyncio.create_task(check_stream())
 
-bot.run(bot_token)
+bot.run(token=os.environ.get('token'))
